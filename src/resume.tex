@@ -1,0 +1,97 @@
+%% start of file `navarro_{cv}.tex'.
+%% Copyright 2006 Xavier Danaux.
+%%  Updated 2011 Javier Navarro
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+%
+\documentclass[10pt, a4paper]{moderncv}
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvstyle{classic}       % idem
+\moderncvtheme[blue]{classic} 
+%\moderncvtheme[blue]{banking}    
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+\usepackage[english]{babel}
+\usepackage{lmodern}
+% The fontawesome package provides some nice symbols for linkedin, github and lots of more http://www.ctan.org/tex-archive/fonts/fontawesome
+%\usepackage{fontawesome} 
+
+% Margins and geometry
+\usepackage[scale=0.80, top=2cm, bottom=2cm, left=2cm]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% Reduce PDF size
+\pdfminorversion=5
+\pdfobjcompresslevel=3 
+\pdfcompresslevel=9
+
+%----------------------------------------------------------------------------------
+%            Personal data
+%----------------------------------------------------------------------------------
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Javier}
+\familyname{Navarro}
+\title{Curriculum Vitae}
+% \phone{PHONE}
+\email{javier.navarro.fdez [at] gmail.com}
+\social[github][https://github.com/jnavarrof]{jnavarrof}
+\social[linkedin][https://es.linkedin.com/in/javiernavarrofdez]{javiernavarrofdez}
+\social[twitter][https://twitter.com/jnavarrofdez]{@jnavarrofdez} 
+\social[web][https://jnavarrof.github.io]{https://jnavarrof.github.io/}
+%\homepage{www.javiernavarro.org}
+\extrainfo{
+% \url{http://www.javiernavarro.org} 
+ORCID: \href{http://orcid.org/0000-0001-8110-8926}{0000-0001-8110-8926} \\
+ResearcherID:  I-5066-2016 
+}
+
+%\photo[64pt]{mei.jpg} % also optional, and the optional argument is the height the picture must be resized to
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+% command and color used in this document, independently from moderncv 
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\vspace*{1em}
+\center
+\begin{minipage}{45em}
+%\textcolor{gray}
+{\emph{
+A results-driven, creative, and proactive System Engineer with extensive experience in both High-Performance Computing and Cloud environments. Team-oriented professional who works effectively in cross-disciplinary teams. I am convinced that the best way to perform a job is with active listening, determination, and a positive attitude to hard work. 
+}}
+\end{minipage}
+\vspace*{2em}
+
+%\makequote
+\section{\textsc{Personal details}}
+\cvitem{}{\begin{tabular}{@{}lll@{}}
+Name: \ 	& Javier Navarro \\
+Nationality: \ & Spanish\\
+Visa status: \ & EU Settlement Scheme, pre-settle approved \\ 
+Address: \ & Cambridge, Cambridgeshire (UK) \\
+\end{tabular}}
+\closesection
+
+% Include all items
+\input{include/experiencia}
+\input{include/formacion}
+\input{include/idiomas}
+\input{include/proyectos}
+
+% Last updated
+\vspace*{\fill}
+\section{\textsc{Updated}}
+\cvitem{}{December 2021}
+\closesection{}
+\end{document}
